@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojoweather</title>
+    <link rel="stylesheet" href="weatherdojo.css">
+    <script src="weatherdojo.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="title">DojoWeather</div>
+        <div class="cities">
+            <p>Burbank</p>
+            <p>Chicago</p>
+            <p>Dallas</p>
+        </div>
+    </header>
+    <div class="main">
+        <div class="optionbar">
+            <div class="currentcity">San Jose</div>
+            <div class="unit">
+                <p class="showtemp">show temperature in</p>
+                <select name="unit" class="dropdown"  onchange="changeUnit(this)">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="daycontainer">
+            <div class="day">
+                <p class="thisday">Today</p>
+                <img src="./assets/some_rain.png" alt="rainy" class="weatherimg">
+                <p class="descript">some rain</p>
+                <p class="highlow"><span class="red"><span class="temp1">24</span>°</span>    <span class="blue"><span class="temp2">18</span>°</span></p>
+            </div>
+            <div class="day">
+                <p class="thisday">Tomorrow</p>
+                <img src="./assets/some_sun.png" alt="rainy" class="weatherimg">
+                <p class="descript">some sun</p>
+                <p class="highlow"><span class="red"><span class="temp3">27</span>°</span>    <span class="blue"><span class="temp4">19</span>°</span></p>
+            </div>
+            <div class="day">
+                <p class="thisday">Friday</p>
+                <img src="./assets/some_clouds.png" alt="rainy" class="weatherimg">
+                <p class="descript">some clouds</p>
+                <p class="highlow"><span class="red"><span class="temp5">21</span>°</span>    <span class="blue"><span class="temp6">16</span>°</span></p>
+            </div>
+            <div class="day">
+                <p class="thisday">Saturday</p>
+                <img src="./assets/some_sun.png" alt="rainy" class="weatherimg">
+                <p class="descript">some sun</p>
+                <p class="highlow"><span class="red"><span class="temp7">26</span>°</span>    <span class="blue"><span class="temp8">21</span>°</span></p>
+            </div>
+        </div>
+        <div class="alert" id="alert">
+            <img class="img"  src="./assets/cookie.png" alt="cookie">
+            <div class="txtcontainer"><p class="txtalert"><p class="bold">Stop! Cookie time</p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p></div>
+            <button class="iaccept" onclick="disappear()">I Accept!</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="weatherdojo.js"></script>
+</body>
+
+</html>
